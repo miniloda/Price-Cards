@@ -1,58 +1,78 @@
-html{
-    margin:0;
-    padding:0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    box-sizing: border-box;
-}
 body{
-    margin:0;
-    padding:0;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: "Roboto";
     font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    background-color: rgb(255, 255, 255);
-    width: 100vw;
-    height: 100vh;
 }
 main{
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
 }
-/* Grid container */
-
-.flex-container{
+.container{
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
-    justify-content:center;
-    height: auto;
+    justify-content: flex-start;
     width: 80%;
-    max-width: 1000px;
+    min-width: 1000px;
+    height: 70%;
+    min-width: 800px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
-div{
-    background-color: aliceblue;
-}
-.choices{
+.price-cards{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    height: auto;
-    width: auto;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    height: 100%;
+    width: 1000px;
+
+
 }
-.choices>div{
-    background-color: aliceblue;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+span.prices{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+}
+.header{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cards{
+    width: 300px;
+    height:450px;
+    background-color: #2196F3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* cards color */
+.choices{
+    display:flex;
+    align-items: center;
+
+}
+.choices>*{
+    margin: 10px;
 }
 /* for switch */
 .switch {
@@ -115,53 +135,63 @@ div{
   
   .slider.round:before {
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+  li{
+    list-style: none;
+
   }
-.pricing-cards{
+  .cards > div{
+    text-align: center;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: auto;
-    width: 100%;
-    max-width: 1000px;
-
-
-}
-  /* for cards */
-.cards {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        width: 300px;
-        margin: auto;
-        text-align: center;
-        font-family: arial;
-        height: 400px;
-        background-color: #2196F3;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 0.3s ease;
-        -webkit-transition: 0.3s ease;
-        -moz-transition: 0.3s ease;
-        -ms-transition: 0.3s ease;
-        -o-transition: 0.3s ease;
-}
+    align-items: center;
+  }
+  button{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .pricing-details{
+    margin-top: 40px;
+  }
+  .pricing-details > span{
+    margin-bottom: 10px;
+  }
 .cards:hover{
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
+    transform: translateY(-10px);
+    -webkit-transform: translateY();
+    -moz-transform: translateY();
+    -ms-transform: translateY();
+    -o-transform: translateY();
 }
-@media only screen and (max-width: 600px) {
-    .cards {
-        width: 100%;
-    }
-    .pricing-cards{
+@media only screen and (max-width: 1000px) {
+    .price-cards{
         flex-direction: column;
+    } 
+    .cards{
+        margin-top: 10px;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
     }
     main{
         height: auto;
-        min-height: 100% !important;
+
     }
 }
-    

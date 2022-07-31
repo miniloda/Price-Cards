@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Price Cards</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="src/css/styles.css">
@@ -17,27 +17,61 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <main>
-            <div class = "flex-container">
-                <div class = "heading">
-                <h1>Our pricing</h1>
-                </div>
-                <div class = "choices">
-                    <div class="anually"><span>Annually</span></div>
-                    <div class = "switch">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                          </label>
+            <div class="container">
+                <div class = "header">
+                    <h1>Our pricing</h1>
+                    <div class = "choices">
+                        <div class = "annually"><span>Monthly</span></div>
+                        <div class = "switch">
+                            <div>
+                                <label>
+                                    <input type="checkbox" id ="click-switch">
+                                    <span class="slider round"></span>
+                                  </label>
+                            </div>
+                        </div>
+                        <div class = "monthly"><span>Annually</span></div>
                     </div>
-                    <div class = "monthly"><span>Monthly</span></div>
                 </div>
-                <div class = "pricing-cards">
-                    <div class = "cards"></div>
-                    <div class = "cards"></div>
-                    <div class = "cards"></div>
-            </div>
+                <div class="price-cards">
+                    <div class="cards card1" id = "free">
+                        <h2>Free</h2>
+                        <span class = "prices">$0</span>
+                        <div class = "pricing-details">
+                            <span>1 user</span>
+                            <span>2 projects</span>
+                            <span>200mb storage</span>
+                            <span>200gb bandwidth</span>
+                            <button>Buy Now</button>
+                        </div>
+                      
+                    </div>
+                    <div class="cards card2" >
+                        <h2>Basic</h2>
+                        <span class = "prices" id = "basic">$5</span>
+                        <div class = "pricing-details">
+                            <span>5 users</span>
+                            <span>10 projects</span>
+                            <span>1GB storage</span>
+                            <span>1TB bandwidth</span>
+                            <button>Buy Now</button>
+                        </div>
+
+                    </div>
+                    <div class="cards card3" >
+                        <h2>Professional</h2>
+                        <span class = "prices" id = "professional">$10</span>
+                        <div class = "pricing-details">
+                            <span>10 users</span>
+                            <span>20 projects</span>
+                            <span>2GB storage</span>
+                            <span>2TB bandwidth</span>
+                            <button>Buy Now</button>
+                    </div>
+                    </div>
+                </div>
             </div>
         </main>
-        <script src="" async defer></script>
+        <script src="src/script/script.js"></script>
     </body>
 </html>
