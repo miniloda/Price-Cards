@@ -7,4 +7,4 @@ Added feature that has monthly or yearly options to make use of interactive java
 
 [![wakatime](https://wakatime.com/badge/github/miniloda/Price-Cards.svg)](https://wakatime.com/badge/github/miniloda/Price-Cards)
 
-## Live Server: https://github.com/miniloda/Price-Cards
+## Live Server: https://miniloda.github.com/Price-Cards
