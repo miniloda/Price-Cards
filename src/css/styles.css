@@ -179,6 +179,12 @@ span.prices{
     -ms-transform: translateY();
     -o-transform: translateY();
 }
+.per{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+}
 @media only screen and (max-width: 1000px) {
     .price-cards{
         flex-direction: column;
