@@ -182,16 +182,17 @@ span.prices{
 @media only screen and (max-width: 1000px) {
     .price-cards{
         flex-direction: column;
+        width: auto;
+
     } 
     .cards{
         margin-top: 10px;
     }
     .container{
-        width: 100%;
+        min-width: 400px;
         height: 100%;
     }
     main{
         height: auto;
-
     }
 }
